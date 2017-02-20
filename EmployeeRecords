@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EmployeeRec
+{
+    public class EmployeeRecord
+    {
+        private int employeeID;
+        private int department;
+
+        public EmployeeRecord()
+        {
+        }
+        
+        public EmployeeRecord(int id, int departmentID)
+        {
+            employeeID = id;
+            department = departmentID;
+        }
+
+        public int Department
+        {
+            get { return department; }
+            set { department = value; }
+        }
+
+        public int EmployeeId
+        {
+            get { return employeeId; }
+            set { employeeId = value; }
+        }
+
+        public EmployeeRecord Clone()
+        {
+            return new EmployeeRecord(employeeId, department);
+        }
+
+    }
+}
