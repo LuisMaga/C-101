@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeRec
+namespace PowerLib
 {
     public class EmployeeRecord
     {
-        private int employeeID;
+        private int employeeId;
         private int department;
 
         public EmployeeRecord()
@@ -17,7 +17,7 @@ namespace EmployeeRec
         
         public EmployeeRecord(int id, int departmentID)
         {
-            employeeID = id;
+            employeeId = id;
             department = departmentID;
         }
 
